@@ -15,7 +15,7 @@
     </parent>
     <groupId>com.jj</groupId>
     <artifactId>education</artifactId>
-    <version>0.0.1.SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>education</name>
     <description>Demo project for Spring Boot</description>
 
