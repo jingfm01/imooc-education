@@ -1,13 +1,13 @@
-package com.jj.education;
+package com.jj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EducationApplication {
+public class EurekaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EducationApplication.class, args);
+        SpringApplication.run(EurekaApplication.class, args);
     }
 
 }
