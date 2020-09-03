@@ -6,11 +6,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.ConfigurableEnvironment;
 
 @SpringBootApplication
 @EnableEurekaClient
-@MapperScan("com.jj.system.mapper")
+@ComponentScan("com.jj")
+@MapperScan("com.jj.servers.mapper")
 public class SystemApplication {
 
     //日志固定写法
@@ -19,7 +21,7 @@ public class SystemApplication {
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(SystemApplication.class);
         ConfigurableEnvironment env = app.run(args).getEnvironment();
-        LOG.info("启动成功！");
+        LOG.info("启动成功!");
         LOG.info("System地址：\thttp://127.0.0.1:{}",env.getProperty("server.port"));
     }
 

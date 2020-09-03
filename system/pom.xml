@@ -11,6 +11,12 @@
 
     <artifactId>system</artifactId>
     <dependencies>
+
+        <dependency>
+            <groupId>com.jj</groupId>
+            <artifactId>servers</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
